@@ -84,6 +84,7 @@ header > p {
 }
 
 .description {
+  text-align: justify;
   width: 100%;
   overflow: hidden;
   display: -webkit-box;
