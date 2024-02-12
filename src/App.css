@@ -1,42 +1,115 @@
-#root {
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400&display=swap');
+
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
+  font-family: 'Inter', sans-serif;
+
+} */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: 'Inter', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+header {
+  background-color: #F55A5A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  margin: 0;
+  width: 100%;
+  height: 4em;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+header > p {
+  color: white;
+  font-family: 'Inter', sans-serif;
+  font-size: 18px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+.main-content {
+  /* border: solid 1px green; */
+  max-width: 60em;
+  /* margin: 3em 10em; */
+  /* margin-top: 20px; */
+  margin: 3em  auto;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 3em;
+  padding: 5px;
+
 }
 
 .card {
-  padding: 2em;
+  /* border: 1px solid purple; */
+  display: flex;
+  gap: 10px;
+  max-width: 800px;
+  /* justify-self: center; */
+  align-self: center;
+  /* margin: 3em auto; */
+  /* height: 300px; */
+  /* max-width: 60em; */
+  /* white-space: nowrap; */
+  /* overflow: hidden; */
+  /* text-overflow: ellipsis; */
+
 }
 
-.read-the-docs {
-  color: #888;
+.card-img > img {
+  width: 200px;
+  height: 255px;
+  /* height: -webkit-fill-available; */
+  border-radius: 5px;
+}
+
+.card-text {
+  padding: 10px 0 10px 0;
+}
+
+
+.location-info{
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  height: 30px;
+}
+
+.location-info > img {
+  /* width: 5%; */
+  /* height: 50%; */
+  /* margin: 1px; */
+  height: 18px;
+}
+
+.location-info > h3 {
+  margin: 0 20px 0 0;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.location-info > a {
+  color: grey;
+  font-size: 16px;
+  /* font-weight: normal; */
+
+}
+
+.dates {
+  font-weight: bold;
+}
+
+.description {
+  /* height: 30px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis; */
 }
