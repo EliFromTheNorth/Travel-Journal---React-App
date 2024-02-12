@@ -49,30 +49,23 @@ header > p {
 }
 
 .card {
-  /* border: 1px solid purple; */
   display: flex;
   gap: 10px;
   max-width: 800px;
-  /* justify-self: center; */
   align-self: center;
-  /* margin: 3em auto; */
-  /* height: 300px; */
-  /* max-width: 60em; */
-  /* white-space: nowrap; */
-  /* overflow: hidden; */
-  /* text-overflow: ellipsis; */
-
 }
 
 .card-img > img {
   width: 200px;
   height: 255px;
-  /* height: -webkit-fill-available; */
   border-radius: 5px;
 }
 
 .card-text {
   padding: 10px 0 10px 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 
@@ -84,9 +77,6 @@ header > p {
 }
 
 .location-info > img {
-  /* width: 5%; */
-  /* height: 50%; */
-  /* margin: 1px; */
   height: 18px;
 }
 
@@ -99,8 +89,6 @@ header > p {
 .location-info > a {
   color: grey;
   font-size: 16px;
-  /* font-weight: normal; */
-
 }
 
 .dates {
@@ -108,8 +96,9 @@ header > p {
 }
 
 .description {
-  /* height: 30px;
-  white-space: nowrap;
+  width: 100%;
   overflow: hidden;
-  text-overflow: ellipsis; */
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
 }
