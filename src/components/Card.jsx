@@ -5,7 +5,7 @@ function Card(props) {
 
   const truncateDescription = (description) => {
     if (description.length > 370) {
-      return description.substring(0, 370) + '...';
+      return description.substring(0, 250) + '...';
     }
     return description;
   };

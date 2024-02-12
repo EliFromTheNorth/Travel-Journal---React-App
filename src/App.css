@@ -22,7 +22,7 @@ header {
 
 header > p {
   color: white;
-  font-size: 18px;
+  font-size: 16px;
 
 }
 
@@ -32,20 +32,20 @@ header > p {
   display: flex;
   flex-direction: column;
   align-content: center;
-  gap: 3em;
+  gap: 2em;
   padding: 5px;
 }
 
 .card {
   display: flex;
   gap: 10px;
-  max-width: 800px;
+  max-width: 600px;
   align-self: center;
 }
 
 .card-img > img {
-  width: 200px;
-  height: 255px;
+  width: 150px;
+  height: 200px;
   border-radius: 5px;
 }
 
@@ -56,34 +56,40 @@ header > p {
   gap: 10px;
 }
 
+.card-text > h1 {
+  font-size: 20px;
+}
+
 
 .location-info{
   display: flex;
   align-items: center;
   gap: 5px;
-  height: 30px;
+  height: 20px;
 }
 
 .location-info > img {
-  height: 18px;
+  height: 14px;
 }
 
 .location-info > h3 {
   margin: 0 20px 0 0;
-  font-size: 18px;
+  font-size: 14px;
   text-transform: uppercase;
 }
 
 .location-info > a {
   color: grey;
-  font-size: 16px;
+  font-size: 14px;
 }
 
 .dates {
   font-weight: bold;
+  font-size: 13px;
 }
 
 .description {
+  font-size: 12px;
   text-align: justify;
   width: 100%;
   overflow: hidden;
