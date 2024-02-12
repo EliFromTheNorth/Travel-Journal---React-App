@@ -3,24 +3,22 @@ import React from "react";
 
 function Card(props) {
 
-  const description = props.description
-
   const truncateDescription = (description) => {
-    // Check if the description length is greater than 370 characters
     if (description.length > 370) {
-      // Truncate the description and add ellipsis
       return description.substring(0, 370) + '...';
     }
-    return description; // Return the original description if it's shorter
+    return description;
   };
 
   return (
     <section className="card">
+
       <div className="card-img">
         <img src={props.imageUrl} />
       </div>
 
       <div className="card-text">
+
         <div className="location-info">
           <img src="public/images/location-icon.png" />
           <h3>{props.location}</h3>
